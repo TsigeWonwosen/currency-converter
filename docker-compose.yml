@@ -1,0 +1,23 @@
+version: '3.3'
+
+services:
+  currency_backend:
+    image: currency_converter_tool
+    container_name: currency_backend
+    restart: on-failure
+    build: .
+    command: nodemon --inspect=0.0.0.0 ./bin/currency-converter.js
+    volumes:
+      - ./:/usr/app
+      - /usr/app/node_modules
+      - /usr/app/modules/frontend
+      - /usr/app/.git
+    ports:
+      - 7040:7040
+      - 9229:9229
+    env_file:
+      - ./.env
+    environment:
+      NODE_ENV: development
+      NODE_PATH: ./helpers/
+      MODULE: backend
