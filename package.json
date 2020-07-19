@@ -34,7 +34,7 @@
     },
     "devDependencies": {
         "cookie-parser": "^1.4.4",
-        "lodash": "^4.17.15",
+        "lodash": "^4.17.19",
         "xml-js": "^1.6.11"
     },
     "jest": {
