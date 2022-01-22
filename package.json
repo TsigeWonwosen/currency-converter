@@ -26,7 +26,7 @@
         "jest": "^25.1.0",
         "logger": "0.0.1",
         "moment": "^2.24.0",
-        "node-fetch": "^2.6.0",
+        "node-fetch": "^3.1.1",
         "path": "^0.12.7",
         "supertest": "^4.0.2",
         "winston": "^2.3.1",
